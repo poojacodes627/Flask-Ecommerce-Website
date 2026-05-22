@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="checkout-box">
+
+    <h1>Checkout</h1>
+
+    <form action="/success" method="POST">
+
+        <input type="text" placeholder="Enter Address" required>
+
+        <input type="text" placeholder="Enter Phone Number" required>
+
+        <button type="submit">Place Order</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
